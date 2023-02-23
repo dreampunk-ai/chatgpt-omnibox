@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "ChatGPT Omnibox",
+    "version": "1.3",
+    "description": "Use ChatGPT from your address bar",
+    "permissions": ["tabs", "activeTab"],
+    "icons": {
+        "16": "16.png",
+        "128": "128.png"
+      },
+    "content_scripts": [
+        {
+          "matches": ["https://chat.openai.com/*"],
+          "js": ["content_script.js"],
+          "run_at": "document_end"
+        }
+      ],
+    "background": {
+        "service_worker": "event_page.js"
+    },
+    "omnibox": {
+        "keyword": "chat",
+        "suggestion": {
+            "imageUrl": "16.png"
+        }
+    }
+}
