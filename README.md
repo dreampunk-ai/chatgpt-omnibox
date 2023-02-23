@@ -14,7 +14,7 @@ You can install ChatGPT Omnibox from the [Chrome Web Store](https://chrome.googl
 
 ## Usage
 
-To use ChatGPT Omnibox, simply type "chat" in your browser's address bar, followed by your query. The extension will display suggestions with images to help you select the right query.
+To use ChatGPT Omnibox, simply type "chat" in your browser's address bar, followed by your query. 
 
 ## Permissions
 
